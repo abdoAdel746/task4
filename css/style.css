@@ -1,0 +1,549 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-family: sans-serif
+}
+
+body {
+  background-color: #cf2a6203;
+  height: 200em
+}
+
+.container {
+  margin: auto 100px;
+  height: 100%
+}
+
+nav {
+  background: #fff;
+  padding: 2em 0;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, .04) 0 3px 5px
+}
+
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline
+}
+
+nav .navbar .logo {
+  font-size: 32px;
+  flex-basis: 30%
+}
+
+nav .navbar .logo::first-letter {
+  color: red
+}
+
+nav .navbar .center ul {
+  list-style: none;
+  display: flex
+}
+
+nav .navbar .center ul li {
+  margin-right: 64px;
+  font-size: 20px;
+  cursor: pointer
+}
+
+nav .navbar .right {
+  display: flex
+}
+
+nav .navbar .right button {
+  border: none;
+  font-size: 13px;
+  padding: 1em;
+  width: 120px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 2em;
+  background: #ce3765;
+  color: #fff
+}
+
+header {
+  background: #fff;
+  height: calc(100vh - 14vh)
+}
+
+header .container {
+  display: flex;
+  height: 100%
+}
+
+header .left {
+  width: 45%;
+  padding: 2em;
+  padding-right: 0;
+  align-self: center
+}
+
+header .left .d_flex {
+  display: flex;
+  align-items: center
+}
+
+header .left .d_flex h1 {
+  font-size: 4em
+}
+
+header .left .d_flex span {
+  font-size: 60px;
+  color: red
+}
+
+header .left p {
+  margin: 40px auto;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 1.5px
+}
+
+header .left button {
+  background: #ce3765;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  padding: 10px;
+  width: 117px;
+  cursor: pointer;
+  border-radius: 2em
+}
+
+header .right img {
+  width: 100%;
+  height: 100%
+}
+
+.explore {
+  margin-top: 10em
+}
+
+.explore h1 {
+  margin-bottom: 32px
+}
+
+.explore .d_flex {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto 50px
+}
+
+.explore .d_flex .item {
+  padding: 5em;
+  border-radius: 70px;
+  width: 100%;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.explore .d_flex .item:hover {
+  transition: all .5s ease-in;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, .25) 0 13px 27px -5px, rgba(0, 0, 0, .3) 0 8px 16px -8px;
+  cursor: pointer
+}
+
+.explore .d_flex .item:hover .img img {
+  filter: invert(1)
+}
+
+.explore .d_flex .item:hover .img {
+  background: #f6444a
+}
+
+.explore .d_flex .item .img {
+  padding: 26px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: background .5s ease-in
+}
+
+.explore .d_flex .item .img img {
+  width: 100%;
+  transition: all .2s ease-in
+}
+
+.explore .d_flex .item h2 {
+  margin: 30px auto;
+  font-weight: 500;
+  font-family: cursive;
+  font-size: 35px
+}
+
+.about {
+  height: 90vh;
+  margin-top: 10em;
+  margin-bottom: 17em
+}
+
+.about .d_flex {
+  display: flex;
+  height: 100%
+}
+
+.about .d_flex .left {
+  flex-basis: 100%;
+  text-align: center
+}
+
+.about .d_flex .left img {
+  width: 100%;
+  height: 100%
+}
+
+.about .d_flex .left .image_sd {
+  width: auto;
+  height: 100%
+}
+
+.about .d_flex .right {
+  flex-basis: 100%;
+  padding: 6em
+}
+
+.about .d_flex .right h3 {
+  color: #575757;
+  font-weight: 100;
+  font-size: 17px
+}
+
+.about .d_flex .right p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: #5d5e5e;
+  font-weight: 100;
+  font-family: ui-serif
+}
+
+.about .d_flex .right h4 {
+  font-size: 50px;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  margin: 22px auto
+}
+
+.about .d_flex .right .courses {
+  padding: 3em;
+  border-radius: 15px;
+  width: 69%;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, .25) 0 13px 27px -5px, rgba(0, 0, 0, .3) 0 8px 16px -8px;
+  cursor: pointer;
+  flex-direction: column;
+  margin: 50px auto;
+  margin-bottom: 0;
+  align-items: center
+}
+
+.about .d_flex .courses .img {
+  padding: 26px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #99dfc7;
+  margin-bottom: 2em
+}
+
+.about .d_flex .right .courses .img img {
+  width: 100%;
+  transition: all .2s ease-in
+}
+
+.think {
+  height: 80vh;
+  background: linear-gradient(90deg, rgb(188 43 92 / 75%) 0, rgb(198 20 74 / 86%) 100%)
+}
+
+.think .d_flex {
+  display: flex;
+  height: 100%
+}
+
+.think .d_flex .left {
+  width: 50%;
+  padding: 6em;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.think .d_flex .left h1 {
+  font-size: 59px;
+  line-height: 1.4;
+  color: #fff
+}
+
+.think .d_flex .left button {
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  margin-top: 19px;
+  background: #414444;
+  color: #eaeaea
+}
+
+.think .right {
+  width: 50%;
+  position: relative
+}
+
+.think .d_flex .right img {
+  width: 100%;
+  position: absolute;
+  top: -5em;
+  left: 6em;
+  height: 121%
+}
+
+footer {
+  margin-top: 11em;
+  background: #000;
+  color: #fff;
+  padding: 4em
+}
+
+footer .d_grid {
+  display: grid;
+  grid-template-columns: 30% auto auto auto
+}
+
+footer .d_grid .item {
+  justify-self: center
+}
+
+footer .d_grid .about_item h1 {
+  margin-bottom: 16px;
+  font-size: 20px
+}
+
+footer .d_grid .about_item p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #cdcdcde0;
+  font-family: serif;
+  letter-spacing: .5px;
+  font-weight: 100
+}
+
+footer .d_grid .about_item .icons {
+  display: flex;
+  margin-top: 33px
+}
+
+footer .d_grid .about_item .icons i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 18px;
+  background: #ce3765;
+  transition: color .5s ease-in-out
+}
+
+footer .d_grid .about_item .icons i:hover {
+  color: #adadad
+}
+
+footer .d_grid .item h2 {
+  font-size: 20px;
+  margin-bottom: 15px
+}
+
+footer .d_grid .item ul {
+  list-style: none
+}
+
+footer .d_grid .item ul li {
+  margin-bottom: 15px;
+  font-size: 15px;
+  cursor: pointer
+}
+
+@media (max-width:1200px) {
+  footer .container {
+    margin: 10px
+  }
+}
+
+@media (min-width:900px) and (max-width:1199px) {
+  header .left .d_flex h1, header .left .d_flex span {
+    font-size: 33px;
+    width: 300px
+  }
+  nav .navbar .center ul li {
+    margin-right: 25px
+  }
+  nav .navbar .right button {
+    font-size: 10px;
+    width: 90px
+  }
+  nav .navbar .logo {
+    font-size: 23px
+  }
+  header .right {
+    display: flex;
+    align-items: center
+  }
+  header .right img {
+    height: 55%
+  }
+  header .left {
+    width: 63%;
+    align-self: center
+  }
+  .about {
+    height: 70vh
+  }
+  .about .d_flex .right {
+    padding: 0
+  }
+  .about .d_flex .right h4 {
+    font-size: 30px
+  }
+  .about .d_flex .right p {
+    font-size: 10px
+  }
+  .about .d_flex .right .courses {
+    padding: 2em;
+    margin: 15px auto
+  }
+  .about .d_flex .courses .img {
+    padding: 20px;
+    width: 75px
+  }
+  .think {
+    height: 45vh
+  }
+  .think .d_flex .left h1 {
+    font-size: 18px
+  }
+  .think .d_flex .right img {
+    top: -3em
+  }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+  .container {
+    margin: auto 10px
+  }
+  nav .navbar .center ul li {
+    margin-right: 10px;
+    font-size: 18px
+  }
+  nav .navbar .logo {
+    font-size: 30px
+  }
+  nav .navbar .right button {
+    font-size: 11px;
+    width: 90px
+  }
+  header .container {
+    flex-direction: column-reverse
+  }
+  header .left, header .right {
+    width: 100%
+  }
+  header {
+    height: auto
+  }
+  .about .d_flex .right h4 {
+    font-size: 20px
+  }
+  .about .d_flex .right {
+    padding: 1em
+  }
+  .about .d_flex .right p {
+    font-size: 10px
+  }
+  .about {
+    height: auto
+  }
+  .think {
+    height: 300px
+  }
+  .think .d_flex .left h1 {
+    font-size: 17px
+  }
+  .think .d_flex .left button {
+    width: 100px;
+    padding: 7px;
+    font-size: 15px
+  }
+  .think .d_flex .right img {
+    top: -3em;
+    left: 2em
+  }
+}
+
+@media (max-width:699px) {
+  .container {
+    margin: auto 10px
+  }
+  nav .navbar .center ul li {
+    margin-right: 9px;
+    font-size: 14px
+  }
+  nav .navbar .right button {
+    font-size: 9px;
+    width: 70px;
+    margin-left: 5px
+  }
+  nav .navbar .logo {
+    font-size: 20px
+  }
+  header .left {
+    width: 100%
+  }
+  header .right {
+    display: none
+  }
+  .about {
+    height: auto;
+    margin-top: 0
+  }
+  .about .d_flex .left {
+    display: none
+  }
+  .about .d_flex .right {
+    padding: 1em
+  }
+  .think .right {
+    display: none
+  }
+  .think .d_flex .left {
+    width: 100%;
+    padding: 1em
+  }
+}
+
+@media (min-width:500px) and (max-width:900px) {
+  footer .d_grid .about_item {
+    grid-column-start: 1;
+    grid-column-end: 4
+  }
+  footer .d_grid {
+    grid-template-columns: auto auto auto
+  }
+  footer .d_grid .item {
+    margin-top: 2em;
+    justify-self: flex-start
+  }
+}
